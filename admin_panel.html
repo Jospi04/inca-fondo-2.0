@@ -5,148 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Panel de administrador para gestionar clientes de IncaFondo">
     <title>Panel de Administrador - IncaFondo</title>
-    <link rel="icon" type="image/ico" href="imagenes/logo.ico">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" type="image/ico" href="img/money2.png">
+    <link rel="stylesheet" href="css/admin_panel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 260px;
-            background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
-            color: #fff;
-            transition: width 0.3s ease;
-            z-index: 50;
-            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
-        }
-        .sidebar.collapsed {
-            width: 80px;
-        }
-        .sidebar.collapsed .sidebar-text {
-            display: none;
-        }
-        .sidebar.collapsed .sidebar-link {
-            justify-content: center;
-        }
-        .sidebar.collapsed .logo-text {
-            display: none;
-        }
-        .sidebar-header {
-            padding: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        .content {
-            margin-left: 260px;
-            padding: 2rem;
-            transition: margin-left 0.3s ease;
-            width: calc(100% - 260px);
-        }
-        .content.collapsed {
-            margin-left: 80px;
-            width: calc(100% - 80px);
-        }
-        .sidebar-link {
-            transition: background-color 0.3s ease;
-        }
-        .sidebar-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        .sidebar-link.active {
-            background-color: #ffffff;
-            color: #1e3a8a;
-            font-weight: 600;
-        }
-        .btn {
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-            background-color: #2563eb;
-        }
-        header {
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            padding: 1.5rem;
-        }
-        .client-table {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-        }
-        .client-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .client-table th, .client-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .client-table th {
-            background-color: #f9fafb;
-            font-weight: 600;
-            color: #1e3a8a;
-        }
-        .client-table tr:hover {
-            background-color: #f1f5f9;
-        }
-        .action-btn {
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .action-btn.edit {
-            background-color: #3b82f6;
-            color: #fff;
-        }
-        .action-btn.delete {
-            background-color: #ef4444;
-            color: #fff;
-        }
-        .action-btn:hover {
-            opacity: 0.9;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 80px;
-            }
-            .content {
-                margin-left: 80px;
-                width: calc(100% - 80px);
-            }
-            .content.collapsed {
-                margin-left: 80px;
-            }
-            .client-table {
-                overflow-x: auto;
-            }
-        }
-    </style>
+    
 </head>
 <body class="flex flex-col">
     <!-- Verificación de sesión -->
@@ -159,7 +25,7 @@
     <!-- Sidebar -->
     <aside class="sidebar flex flex-col">
         <div class="sidebar-header">
-            <a href="#" class="logo-text">IncaFondo</a>
+            <a href="admin_panel.html" class="logo-text">IncaFondo</a>
             <button id="toggleSidebar" class="text-white">
                 <i class="fas fa-bars"></i>
             </button>
@@ -172,6 +38,9 @@
                         <span class="sidebar-text">Clientes</span>
                     </a>
                 </li>
+
+             
+                
             </ul>
         </nav>
     </aside>

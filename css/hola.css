@@ -43,11 +43,12 @@ html{
     color: #333;
 }
 form input, form select {
-    width: 150%;
+    width: 200%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    
 }
 .checkbox {
     margin-bottom: 15px;
@@ -120,21 +121,21 @@ form input, form select {
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 20px;
+    padding: 100px;
     background-color: #3B82F6;
-    max-width: 320px;
-    margin: auto;
+    max-width: -400px;
+    margin: 400px;
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+/* .inicio .contenido-banner img{
     margin-top: 40px;
     border: 10px solid #000000;
     display: block;
     width: 80%;
     margin: auto;
     border-radius: 100%;
-}
+} */
 .inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
