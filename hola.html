@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/hola.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">IncaFondo</a>
+            </div>
+            <nav id="nav">
+                <ul>    
+                    <li><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a href="#fortalezas" onclick="seleccionar()">FORTALEZAS</a></li>
+                    <li><a href="#comentarios" onclick="seleccionar()">COMENTARIOS</a></li>
+                    <li><a href="#clientes" onclick="seleccionar()">CLIENTES </a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="inicio.html" class="login">INICIAR SESION</a></li>
+                  
+                </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+
+        <section class="info">
+            
+            <h1>Obtén efectivo de inmediato</h1>
+            <p>Hasta 1,000 Soles. Recibe tu dinero desde 29 minutos.</p>
+        </section>
+        
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/casita.png " alt="">
+            </div>
+            
+            
+
+            <div class="formulario">
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="text" placeholder="DNI" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <select required>
+                    <option value="">-- Selecciona Ocupación --</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="trabajador">Trabajador</option>
+                </select>
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Confirmo que he leído los términos y condiciones y que soy mayor de edad.</label>
+                </div>
+                <button type="submit" class="solicitar-btn">Solicitar</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="nosotros" class="nosotros">
+        <div class="contenido-seccion">
+            <h2>Nosotros</h2>
+            <p><span>En, IncaFondo.</span> somos una plataforma peruana que conecta sueños con oportunidades. Inspirados en la riqueza y la fortaleza de la cultura inca, nuestro objetivo es brindar acceso rápido y seguro a préstamos en línea para que puedas alcanzar tus metas financieras con facilidad.
+
+                Desde el corazón de los Andes, combinamos tecnología moderna con el espíritu de confianza y comunidad que caracteriza a nuestra tierra. Ofrecemos soluciones financieras transparentes, con préstamos de hasta 1,000 soles en minutos, porque sabemos que tu tiempo y tus necesidades no pueden esperar.
+                
+                Con IncaFondo, no solo obtienes dinero rápido, sino también un aliado que entiende tus raíces y te acompaña en cada paso. ¡Únete a nosotros y hagamos que tus proyectos brillen como el oro inca!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Información de la Empresa</h3>
+                    <ul>
+                        <li>
+                            <strong>Fundación</strong>
+                            15-01-2024
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 916 921 168
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            djjhotamix@gmail.com
+                        </li>
+                       
+                        <li>
+                            <strong>Ubicación</strong>
+                            Pucallpa, Perú
+                        </li>
+                        <li>
+                            <strong>Misión</strong>
+                            <span>Apoyarte</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Beneficios</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>RAPIDES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-file-circle-xmark"></i>
+                            <span>PAPELOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>SEGURIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>APOYO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>ALCANCE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>ORDEN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-flag"></i>
+                            <span>PATRIOTA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>24/7</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         
+            <!-- <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button> -->
+        </div>
+    </section>
+
+    <!-- SECCION -->
+    <section class="fortalezas" id="fortalezas">
+        <div class="contenido-seccion">
+            <h2>Fortalezas de IncaFondo</h2>
+            <div class="fila">
+                <!-- OTRO -->
+                <div class="col">
+                    <h3>Nuestra Tecnología</h3>
+                    <div class="skill">
+                        <span>Acceso Rápido</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Seguridad Digital </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Procesamiento Automatizado</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Plataforma Intuitiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Conexión Segura</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- otro -->
+                <div class="col">
+                    <h3>Atención al Usuario</h3>
+                    <div class="skill">
+                        <span>Soporte Personalizado</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Respuesta Rápida</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Transparencia en Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Asesoramiento Financiero</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Disponibilidad 24/7</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION clientes -->
+    <section id="comentarios" class="comentarios">
+        <div class="contenido-seccion">
+            <h2>COMENTARIO DE NUESTROS CLIENTES</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    
+                    <div class="item izq">
+                        <span class="casa">— Juan P., Lima</span>
+                        <p>"Solicité un préstamo y en menos de 20 minutos ya tenía el dinero en mi cuenta. ¡IncaFondo es increíble!"</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        
+                        <span class="casa">— María G., Cusco</span>
+                        <p>"La página es súper fácil de usar, y el soporte por chat resolvió todas mis dudas al instante."</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        
+                        <span class="casa">— Pedro S., Arequipa</span>
+                
+                        <p>"Me encantó poder hacer todo desde mi celular. IncaFondo hizo que mi emergencia se resolviera rápido."</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <!-- <h3>Experiencia de trabajo</h3> -->
+                    <div class="item der">
+                       
+                        <span class="casa">— Sofía L., Chiclayo</span>
+                       
+                        <p>"Obtuve un préstamo para mi negocio y todo fue rápido y sin complicaciones. ¡Gracias, IncaFondo!"</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                       
+                        <span class="casa">— Ana R., Trujillo</span>
+                        
+                        <p>"La calculadora de préstamos me ayudó a planificar todo sin sorpresas. Muy transparente."</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <!-- <h4>Front Developer</h4> -->
+                        <span class="casa">— Luis M., Piura</span>
+                       
+                        <p>"Primera vez que uso una app de préstamos y no me decepcionó. ¡Volveré a usar IncaFondo!"</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="clientes" class="clientes">
+        <div class="contenido-seccion">
+            <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/viz.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Martin Vizcarra</h3>
+                        <p>"¡Increíble! Con IncaFondo tuve el dinero en minutos para mi emergencia."</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/key.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Keyko Fujimori</h3>
+                        <p>"Gracias a IncaFondo, pude pagar mi campaña sin tanto lío, ¡los recomiendo!"</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/predo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pedro Castillo</h3>
+                        <p>"Nunca pensé que pedir un préstamo sería tan fácil, IncaFondo me salvó."</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/alan.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Alan Garcia</h3>
+                        <p>"Con IncaFondo me sentí seguro y bien atendido, ¡un servicio 100% confiable!"</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/miky.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mike Tyson</h3>
+                        <p>"Mi negocio creció gracias a IncaFondo, ¡son un gran apoyo para los peruanos!"</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/dina.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dina Boluarte</h3>
+                        <p>"Pedí 1,000 soles con IncaFondo y todo fue rápido y sin complicaciones, ¡wow!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Sección de enlaces -->
+            <div class="footer-links">
+                
+            </div>
+    
+            <!-- Sección de contacto -->
+            <div class="footer-contact">
+               
+            </div>
+    
+            <!-- Sección de redes sociales -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://x.com/example" target="_blank">X</a>
+                <a href="https://facebook.com/example" target="_blank">Facebook</a>
+                <a href="https://instagram.com/example" target="_blank">Instagram</a>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 INCAFONDO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
